@@ -1,5 +1,6 @@
-from generate_data import write_data
+from model import prediction
 
 if __name__ == '__main__':
-    print("hello")
-    write_data()
+    print(prediction(3))
+
+

@@ -29,7 +29,7 @@ def data_generator():
     for subject in subjects:
         row.append(subject)
         credits = randint(4, 6)
-        row.append(randint(0, 70) + credits * 2)
+        row.append(randint(10, 30 + credits * credits) + credits * 4)
         row.append(credits)
         data.append(row)
         row = []
@@ -44,4 +44,3 @@ def write_data():
     for row in data:
         writer.writerow(row)
     f.close()
-    pass
